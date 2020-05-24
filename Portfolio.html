@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Portfolio</title>
+<link rel="stylesheet" href="Personal-Portfolio-Web.css">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  padding: 0px;
+  text-align: center;
+  color:black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:lightskyblue;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:paleturquoise;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightskyblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h1>Benjamin Lee</h1>
+
+</div>
+
+<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Info.html">Information</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">Portfolio 
+          </button>
+          <div class="dropdown-content">
+            <a href="Portfolio.html">Portfolio Home</a>
+            <a href="Portfolio-One.html">JavaScript Calculator</a>
+            <a href="Portfolio-Two.html">Interactive Story</a>
+            <a href="Portfolio-Three.html">HTML Images</a>
+            <a href="Portfolio-Four.html">CSS Zen Garden</a>
+    
+          </div>
+        </div> 
+      </div>
+      
+  
+
+<div class="row">
+  <div class="side">
+    <img src="Images/IMG_4677.jpg" alt="his image displays an Asian American male smiling, he is wearing a blue polo">
+  </div>
+  <div class="main">
+    <h2>Portfolio</h2>
+    <p> Welcome to my Portfolio!
+    </p> 
+
+    <P> <a href="Portfolio-One.html">JavaScript Calculator</a></P>
+    
+    <P> <a href="Portfolio-Two.html">Interactive Story Project</a></P>
+        
+    <P><a href="Portfolio-Three.html">HTML Images</a></P>
+
+    <P><a href="Portfolio-Four.html">CSS Zen Garden Challenge</a></P>
+
+    </div>
+</div>
+
+</body>
+</html>

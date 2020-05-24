@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<Title>About</Title>
+<link rel="stylesheet" href="Personal-Portfolio-Web.css">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  padding: 0px;
+  text-align: center;
+  color:black;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color:lightskyblue;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:paleturquoise;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightskyblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+    <h1>Benjamin Lee</h1>
+  
+  </div>
+
+
+  <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Info.html">Information</a>
+      <a href="Contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Portfolio 
+        </button>
+        <div class="dropdown-content">
+          <a href="Portfolio.html">Portfolio Home</a>
+          <a href="Portfolio-One.html">JavaScript Calculator</a>
+          <a href="Portfolio-Two.html">Interactive Story</a>
+          <a href="Portfolio-Three.html">HTML Images</a>
+          <a href="Portfolio-Four.html">CSS Zen Garden</a>
+  
+        </div>
+      </div> 
+    </div>
+
+  <div class="main">
+    <h2>About Me</h2>
+    <img src="Images/IMG_4190 (1).jpg" alt="This image displays an Asian American male smiling, he is wearing a black polo.">
+    <p>My name is Benjamin Tsimmuaj Lee, and I’m from Fresno, California.</p>
+
+    <h2>Favorite Food and Beverages</h2>
+    <img src="Images/My Post-2 (1).jpg" alt="This image displays a collage of shawarma and boxed water.">
+    <p>Through my travels, I’ve tried different foods, for example when I visited Princeton, New Jersey, I tried shawarma,
+        which I soon began to like eating. While I was in New York city, I tried a New York style pizza with pineapple, which is
+        my favorite. My beverages of choice consist of mint lemonade, water, and boba.
+    </p>
+
+    <h2>Achievements</h2>
+    <img src="Images/My Post (1).jpg" alt="This image displays a collage of New York City, Philadelphia, and Los Angeles.">
+    <p>Some of the activities I’ve achieved in my sixteen years of life, consist of passing my advanced placement history class
+        with a score of three, visiting cities such as New York, Philadelphia, and Los Angeles, and being able to help my
+        parents by working at their business.
+    </p>
+
+    <h2>Hobbies</h2>
+    <img src="Images/guilherme-maggieri-OH5g9IgcMWs-unsplash (1).jpg" alt="This image displays a tennis racquet and a tennis ball.">
+    <p>What I do in my free time is play tennis, whether it’s playing with my old tennis teammates or my cousins. When I’m at
+        home, I usually like to sit back and watch shows on Netflix, some shows that I’ve finished watching, consist of, All
+        American, Friends, and The Office.
+    </p>
+
+    <h2>The Plan</h2>
+    <img src="Images/IMG_1279.jpg" alt="This image displays an Asian American male smiling, he is also wearing a Princeton University hoodie.">
+    <p>My four year plan is to attend a four year college, private or public, and major in economics. What I plan to do with my
+        economics degree is become an investment banking analyst. I do plan to attend business school to obtain an MBA, so that
+        I can become an investment banking associate.
+    </p>
+    
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>JavaScript Calculator</title>
+<link rel="stylesheet" href="Personal-Portfolio-Web.css">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  padding: 0px;
+  text-align: center;
+  color:black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:lightskyblue;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:paleturquoise;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightskyblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Benjamin Lee</h1>
+
+</div>
+
+<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Info.html">Information</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">Portfolio 
+          </button>
+          <div class="dropdown-content">
+            <a href="Portfolio.html">Portfolio Home</a>
+            <a href="Portfolio-One.html">JavaScript Calculator</a>
+            <a href="Portfolio-Two.html">Interactive Story</a>
+            <a href="Portfolio-Three.html">HTML Images</a>
+            <a href="Portfolio-Four.html">CSS Zen Garden</a>
+    
+          </div>
+        </div> 
+      </div>
+      
+  
+
+<div class="row">
+  <div class="side">
+      <h2>JavaScript Calculator</h2>
+    <img src="Images/black-calculator-near-ballpoint-pen-on-white-printed-paper-53621 (2).jpg" alt="This image displays a calculator laying on a piece of paper.">  </div>
+  </div>
+  <div class="main">
+    <P>One of my first projects at the Center for Advanced Research and Technology, was the JavaScript calculator. This project
+        took place at the beginning of the school year when we were introduced to the coding language JavaScript. The software
+        that I used to code the JavaScript calculator is Visual Studio. With visual studio, I was able to write functions that
+        would be able to add, subtract, multiply, and divide. The resources that were given to me was, lessons about JavaScript
+        from my learning instructor Mr. Fast, and a book called Eloquent JavaScript. In the book Eloquent JavaScript, I learned
+        how functions work, and how you’re supposed to write them. The coding language JavaScript was difficult, and I had to
+        restart my functions everytime it didn’t work the way that I wanted it to work. I struggled with this project, however I
+        kept using the resources that were given to me, and I also communicated with some of my classmates, which resulted in me
+        completing the JavaScript Calculator. With the communication that I had with my instructor and my classmates, it aided
+        me in completing this project.</P>
+
+        <P><a href="file:///Users/benjaminlee/Downloads/Lee-Benjamin-calculator-1.HTML.html"> CALCULATOR</a>
+
+    </div>
+</div>
+
+</body>
+</html>
+

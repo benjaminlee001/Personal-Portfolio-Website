@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>CSS Zen Garden Challenge</title>
+<link rel="stylesheet" href="Personal-Portfolio-Web.css">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  padding: 0px;
+  text-align: center;
+  color:black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:lightskyblue;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:paleturquoise;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:lightskyblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h1>Benjamin Lee</h1>
+
+</div>
+
+<div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Info.html">Information</a>
+        <a href="Contact.html">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">Portfolio 
+          </button>
+          <div class="dropdown-content">
+            <a href="Portfolio.html">Portfolio Home</a>
+            <a href="Portfolio-One.html">JavaScript Calculator</a>
+            <a href="Portfolio-Two.html">Interactive Story</a>
+            <a href="Portfolio-Three.html">HTML Images</a>
+            <a href="Portfolio-Four.html">CSS Zen Garden</a>
+    
+          </div>
+        </div> 
+      </div>
+      
+<div class="row">
+  <div class="side">
+      <h2>CSS Zen Garden Challenge</h2>
+    <img src="Images/white-black-pagoda-temple-161247 (2).jpg" alt="This image displays a black temple surrounded by trees.">  </div>
+  </div>
+  <div class="main">
+    <P>Cascade Styling Sheets, that is one of the last coding languages that I was taught, assignment where we exercised our
+        learning of CSS was the Zen Garden Challenge. In the Zen Garden Challenge, we were tasked in using CSS styling on the
+        Zen Garden HTML template. Essentially, I used my knowledge of CSS by centering some parts of the text, changing the
+        fonts, adding borders to the text, and resizing the text. I also used some of the knowledge I gained from the flexbox
+        lesson that my instructor taught us, to create a type of flexbox layout. The software that I used was Visual Studio,
+        after I used my knowledge of CSS on the Zen Garden HTML template, I uploaded the file to GitHub, where I stored my code.</P>
+
+        <P> <a href="https://musing-fermi-65887c.netlify.app"> Zen Garden Challenge</a></P>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First JS Calculator</title>
+</head>
+<body>
+    <h1 id="name">This text is replaced by the script below.</h1>
+
+
+    <!-- This is an HTML comment. Please set the requested parameter below and leave the rest of the script alone.-->
+    <script>
+        // Set the parameter to your First and Last Name
+        setName("Benjamin Lee")
+
+        // this function replaces the content of the "H1" element in the HTML above.
+        function setName(name){
+            // select the H1 tag by ID of "name"
+            let element = document.getElementById("name");
+            if(element) {
+                // set the text of the H1 tag
+                element.innerText = `${name}'s First JS Calculator`;
+            }
+        }
+    </script>
+
+
+    <!-- Write your calculator code in the script tag provided below. -->
+    <script>
+        
+ function calc(){
+            var num1 = prompt ("enter first number")
+            var num2 = prompt ("enter second number")
+            var operation= prompt ("add, subtract, multiply, divide")
+            var answer 
+            //These are the variables for using the calculator.
+            num1=Number(num1)
+            num2=Number(num2)
+        //This is the operation for the calculator.
+       function add(num1,num2){
+        return num1 + num2
+       }
+       function subtract(num1,num2){
+       return num1 - num2
+       }
+       function multiply(num1,num2){
+           return num1 * num2
+       }
+       function divide(num1,num2){
+           return num1 / num2
+       }
+       // Essentially the function makes sure that you get the number that you input.
+       
+          switch(operation){
+
+           case "add" :
+           answer = num1 + num2;
+           break; 
+           
+           case "subtract" :
+           answer = num1 - num2;
+           break;
+           
+           case "multiply" :
+            answer = num1 * num2;
+           break;
+           
+           case "divide" :
+           answer = num1 / num2;
+           break;
+          
+           default :
+           answer = "incorrect"
+    }
+        // The switch makes sure it switches through operations.
+
+    if (answer || answer === 0){
+        alert ("answer is " + answer)
+    }
+    
+}
+calc()   
+    </script>
+
+</body>
+</html>
